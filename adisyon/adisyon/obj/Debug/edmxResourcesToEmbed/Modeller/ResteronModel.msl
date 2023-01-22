@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="RestoranModelStoreContainer" CdmEntityContainer="RestoranEntities">
+    <EntitySetMapping Name="Masalar">
+      <EntityTypeMapping TypeName="RestoranModel.Masalar">
+        <MappingFragment StoreEntitySet="Masalar">
+          <ScalarProperty Name="AcikMi" ColumnName="AcikMi" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="adı" ColumnName="adı" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="urunGruplari">
+      <EntityTypeMapping TypeName="RestoranModel.urunGruplari">
+        <MappingFragment StoreEntitySet="urunGruplari">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="adi" ColumnName="adi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Urunler">
+      <EntityTypeMapping TypeName="RestoranModel.Urunler">
+        <MappingFragment StoreEntitySet="Urunler">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Grupid" ColumnName="Grupid" />
+          <ScalarProperty Name="adi" ColumnName="adi" />
+          <ScalarProperty Name="fiyat" ColumnName="fiyat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SiparisDetay">
+      <EntityTypeMapping TypeName="RestoranModel.SiparisDetay">
+        <MappingFragment StoreEntitySet="SiparisDetay">
+          <ScalarProperty Name="Tutar" ColumnName="Tutar" />
+          <ScalarProperty Name="Miktar" ColumnName="Miktar" />
+          <ScalarProperty Name="Fiyat" ColumnName="Fiyat" />
+          <ScalarProperty Name="UrunId" ColumnName="UrunId" />
+          <ScalarProperty Name="SiparisId" ColumnName="SiparisId" />
+          <ScalarProperty Name="ıd" ColumnName="ıd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Siparisler">
+      <EntityTypeMapping TypeName="RestoranModel.Siparisler">
+        <MappingFragment StoreEntitySet="Siparisler">
+          <ScalarProperty Name="KapanmaZamani" ColumnName="KapanmaZamani" />
+          <ScalarProperty Name="AcikMi" ColumnName="AcikMi" />
+          <ScalarProperty Name="AcilmaZamani" ColumnName="AcilmaZamani" />
+          <ScalarProperty Name="MasaId" ColumnName="MasaId" />
+          <ScalarProperty Name="ıd" ColumnName="ıd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
